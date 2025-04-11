@@ -6,7 +6,6 @@ import sendResponse from '../../utils/sendResponse'
 const createUser = catchAsync(
   async (req, res) => {
     const payload = req.body
-
     const result = await userService.createUser(payload)
 
     sendResponse(res, {
@@ -69,5 +68,5 @@ export const userController = {
   getUser,
   getSingleUser,
   updateUser,
-  deleteUser,
+  deleteUser
 }

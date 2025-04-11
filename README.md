@@ -82,13 +82,18 @@ npm run build
 - `POST /api/v1/auth/register` - Register new user
 - `POST /api/v1/auth/login` - User login
 
-### Protected Routes
-- `GET /api/v1/users/profile` - Get user profile
-- `PATCH /api/v1/users/profile` - Update profile
+### Users Routes
+- `GET /api/v1/user` - Get All user List 
+- `GET /api/v1/user/:id` - User can update his information.
+- `PATCH /api/v1/user` - Update profile
 
 ### Admin Routes
-- `GET /api/v1/admin/users` - List all users
-- `PATCH /api/v1/admin/users/:id` - Update user status
+- `DELECT /api/v1/admin/blogs/:id` - Admin can delete any blogs for policy violations 
+- `PATCH /api/v1/admin//users/:userId/block` - Admin Can block any user status for policy violations. 
+
+### Blogs Routes(Just for example ... )
+- `GET /api/v1/blogs` - Any blogs  any user can see 
+- `PATCH /api/v1/blogs/:id` - Blogger can edit his blogs but he need to be authorized. 
 
 ### Open Swagger Routes
 - `http://localhost:5000/api/api-docs/` - Open Swagger after install project 

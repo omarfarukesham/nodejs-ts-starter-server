@@ -132,7 +132,9 @@ export default userRouter;
 
 
 
-//if you don't want to use swagger, you can uncomment the below code and comment the above code
+/**
+ * if you don't want to use swagger, you can uncomment the below code and comment the above code
+ * */
 
 
 // import { Router } from 'express'

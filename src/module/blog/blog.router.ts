@@ -172,6 +172,10 @@ blogRouter.delete(
 
 export default blogRouter;
 
+/**
+ * if you don't want to use swagger documentation, you can comment out the above code and use the below code
+ */
+
 // import { Router } from 'express'
 // import validateRequest from '../../middlewares/validateRequest'
 // import { blogController } from './blog.controller'
