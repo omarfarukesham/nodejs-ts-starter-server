@@ -44,18 +44,21 @@
 - **Validation**: Zod
 - **Security**: bcrypt, cors
 - **Development**: nodemon, prettier
+- **Documentation**: Swagger
 
 ## 🚀 Getting Started
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/your-username/node-typescript-starter.git
+git clone https://github.com/omarfarukesham/nodejs-ts-starter-server
 cd node-typescript-starter
 ```
 
 2. **Install dependencies**
 ```bash
-npm install
+npm install 
+or
+yarn
 ```
 
 3. **Configure environment variables**
@@ -68,20 +71,29 @@ cp .env.example .env
 ```bash
 npm run dev
 ```
+4. **Build for Production server**
+```bash
+npm run build
+```
 
 ## 📚 API Documentation
 
 ### Authentication Endpoints
-- `POST /api/auth/register` - Register new user
-- `POST /api/auth/login` - User login
+- `POST /api/v1/auth/register` - Register new user
+- `POST /api/v1/auth/login` - User login
 
 ### Protected Routes
-- `GET /api/users/profile` - Get user profile
-- `PATCH /api/users/profile` - Update profile
+- `GET /api/v1/users/profile` - Get user profile
+- `PATCH /api/v1/users/profile` - Update profile
 
 ### Admin Routes
-- `GET /api/admin/users` - List all users
-- `PATCH /api/admin/users/:id` - Update user status
+- `GET /api/v1/admin/users` - List all users
+- `PATCH /api/v1/admin/users/:id` - Update user status
+
+### Open Swagger Routes
+- `http://localhost:5000/api/api-docs/` - Open Swagger after install project 
+
+
 
 ## 🔒 Error Handling
 
@@ -121,5 +133,5 @@ Created by [Omar Faruk](https://github.com/omarfarukesham)
 ---
 
 <p align="center">
-  Made with ❤️ by Omar Faruk
+  Made with ❤️ by Omar Faruk, full-stack developer
 </p>
